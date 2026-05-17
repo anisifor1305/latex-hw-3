@@ -21,6 +21,7 @@
 
 % * Добавлены вручную. За вопросами к @mchernigin
 \usepackage{preamble}
+\renewcommand\theFancyVerbLine{\small\arabic{FancyVerbLine}}
 
 \begin{document}
 
@@ -119,10 +120,14 @@
 % \defabbr
 
 \intro
+\input{intro}
 
 % После введения — серии \section, \subsection и т.д.
 
+\input{body}
+
 \conclusion
+\input{conclusion}
 
 % Отобразить все источники. Даже те, на которые нет ссылок.
 % \nocite{*}
